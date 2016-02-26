@@ -11,7 +11,7 @@ MCU_FAMILY		= STM32F0
 CC_PATH ?= "C:\Program Files (x86)\GNU Tools ARM Embedded\5.2 2015q4\bin"
 
 FP_FLAGS	?= -msoft-float
-ARCH_FLAGS	= -mthumb -mcpu=cortex-m3 $(FP_FLAGS) -mfix-cortex-m3-ldrd
+ARCH_FLAGS	= -mthumb -mcpu=cortex-m0 $(FP_FLAGS)
 
 
 TARGET = hn-stm32f0-discovery
