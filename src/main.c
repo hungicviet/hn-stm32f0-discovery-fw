@@ -61,30 +61,10 @@ int main(void)
 void clock_init(void)
 {
   rcc_clock_setup_in_hsi_out_48mhz();
-  rcc_periph_clock_enable(RCC_GPIOA);
+  rcc_periph_clock_enable(RCC_GPIOC);
  // rcc_periph_clock_enable(RCC_GPIOB);
 //  rcc_periph_clock_enable(RCC_AFIO);
 }
 
-/* Output for printf */
-// int _write(int file, char *ptr, int len);
-// int _write(int file, char *ptr, int len)
-// {
-//   int i;
-  
-//   if (file == STDOUT_FILENO || file == STDERR_FILENO)
-//   {
-//     for (i = 0; i < len; i++)
-//     {
-//       if (ptr[i] == '\n')
-//       {
-//         cdcacm_input('\r');
-//       }
-//       cdcacm_input(ptr[i]);
-//     }
-//     return i;
-//   }
-//   errno = EIO;
-//   return -1;
-// }
+
 
